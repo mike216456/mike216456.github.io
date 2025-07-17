@@ -6,13 +6,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #1a2746;
-      --secondary: #f5f7fa;
-      --accent: #1e90ff;
+      --primary: #222;
+      --secondary: #bdbdbd;
+      --accent: #222;
       --text: #222;
-      --muted: #6c7a89;
-      --white: #fff;
-      --divider: #e3e7ed;
+      --muted: #222;
+      --white: #bdbdbd;
+      --divider: #bdbdbd;
     }
     * {
       margin: 0;
@@ -21,8 +21,8 @@
       font-family: 'Roboto', sans-serif;
     }
     body {
-      background: var(--secondary);
-      color: var(--text);
+      background: #bdbdbd;
+      color: #222;
       line-height: 1.7;
     }
     nav {
@@ -423,6 +423,15 @@
         height: auto;
       }
     }
+    nav, .section, .about-section, .mission-vision-section, .contact, .hero-images {
+      background: #bdbdbd !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+    }
+    .track-record-item, .mission-vision-item {
+      background: #bdbdbd !important;
+      box-shadow: none !important;
+    }
   </style>
 </head>
 <body>
@@ -431,9 +440,8 @@
       <div class="nav-logo">Max Mercury PMC</div>
       <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#why">Why Us</a>
-        <a href="#mission">Mission</a>
+        <a href="#track-record">Track Record</a>
+        <a href="#mission-vision">Mission & Vision</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -455,7 +463,7 @@
         With decades of proven experience, we approach every project with innovation, excellence, and the determination to exceed expectations.</p>
       </div>
       <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=700&q=80" alt="Architectural drawing tools" />
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=700&q=80" alt="Consultancy firm meeting" />
       </div>
     </div>
   </div>
@@ -465,25 +473,25 @@
       <div class="track-record-item">
         <div class="track-record-num">01</div>
         <div class="track-record-title">Precision Delivered</div>
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Swimming pool installation" />
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Luxury residential swimming pool under construction with precision tools, clean tile layout, and modern design. Surrounded by safety barriers. Professional construction workers on site." />
         <div class="track-record-desc">Our expertly executed swimming pool installations reflect our commitment to precision, safety, and aesthetic excellence.</div>
       </div>
       <div class="track-record-item">
         <div class="track-record-num">02</div>
         <div class="track-record-title">Transformative Outcomes</div>
-        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Community space transformation" />
+        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80" alt="Modern public park in the Middle East with children’s play area, outdoor gym equipment, and clean walking paths. People actively using the facilities. Desert plants and palm trees in background." />
         <div class="track-record-desc">We've transformed community spaces and government facilities with custom outdoor gym and kids play area solutions that promote wellness and engagement.</div>
       </div>
       <div class="track-record-item">
         <div class="track-record-num">03</div>
         <div class="track-record-title">Innovative Solutions</div>
-        <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=400&q=80" alt="Landscape design" />
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="3D architectural model of a landscaped hotel courtyard with elegant green space, walkways, and decorative lighting. Trees, water features, and guest seating areas. Studio lighting." />
         <div class="track-record-desc">Our innovative landscape designs and outdoor fitness spaces have redefined user experience in both hospitality and residential environments.</div>
       </div>
       <div class="track-record-item">
         <div class="track-record-num">04</div>
         <div class="track-record-title">Proven Success</div>
-        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Indoor gym equipment" />
+        <img src="https://images.unsplash.com/photo-1517960413843-0aee8e2d471c?auto=format&fit=crop&w=400&q=80" alt="Modern indoor gym in a school or university setting. Well-lit space with fitness equipment, kids' climbing wall, and open exercise zones. Organized and clean design." />
         <div class="track-record-desc">From indoor gym equipment to modern play zones, our work in educational institutions has delivered lasting value through smart, scalable project management.</div>
       </div>
     </div>
@@ -493,17 +501,17 @@
     <div class="mission-vision-grid">
       <div class="mission-vision-item">
         <div class="mission-vision-subtitle">Our Mission</div>
-        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=500&q=80" alt="Consultant on site" />
+        <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=500&q=80" alt="Consultants discussing project" />
         <div class="mission-vision-desc">We deliver smart consultancy solutions that shape purposeful infrastructure from recreation areas to public sector projects.</div>
       </div>
       <div class="mission-vision-item">
         <div class="mission-vision-subtitle">Our Goal</div>
-        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=500&q=80" alt="Aerial view of sports complex" />
+        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=500&q=80" alt="Business cityscape" />
         <div class="mission-vision-desc">To be the most trusted project management consultancy in the GCC and beyond, known for innovation and results.</div>
       </div>
       <div class="mission-vision-item">
         <div class="mission-vision-subtitle">Why Choose us</div>
-        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=500&q=80" alt="Team reviewing plans" />
+        <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b43?auto=format&fit=crop&w=500&q=80" alt="Professional team meeting" />
         <div class="mission-vision-desc">Led by Charles Almeida and backed by 30+ years of experience, we bring bold visions to life with precision and care.</div>
       </div>
     </div>
