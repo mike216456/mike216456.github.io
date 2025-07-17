@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -24,6 +25,8 @@
       background: #bdbdbd;
       color: #222;
       line-height: 1.7;
+      margin: 0;
+      padding: 0;
     }
     nav {
       width: 100%;
@@ -345,13 +348,30 @@
       margin-bottom: 1.2rem;
       color: #222;
     }
-    .mission-vision-item img {
+    .mission-vision-item img,
+    .track-record-item img {
       width: 340px;
       height: 340px;
       object-fit: cover;
       border-radius: 0;
       margin-bottom: 1.5rem;
       box-shadow: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .mission-vision-grid,
+    .track-record-grid {
+      align-items: start;
+      justify-items: center;
+    }
+    @media (max-width: 1100px) {
+      .mission-vision-item img,
+      .track-record-item img {
+        width: 100%;
+        height: auto;
+        max-width: 340px;
+      }
     }
     .mission-vision-desc {
       font-size: 1.25rem;
@@ -432,27 +452,176 @@
       background: #bdbdbd !important;
       box-shadow: none !important;
     }
+    .minimal-nav {
+      background: #bdbdbd;
+      padding: 0;
+      margin: 0;
+      width: 100vw;
+    }
+    .nav-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 1.2rem 2rem 0.5rem 2rem;
+    }
+    .nav-logo-block {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 0.7rem;
+    }
+    .nav-logo-icon {
+      font-size: 1.3rem;
+      margin-top: 0.2rem;
+    }
+    .nav-logo-text {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.1;
+    }
+    .nav-links-minimal {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      font-size: 1.05rem;
+    }
+    .nav-links-minimal a {
+      color: #222;
+      text-decoration: none;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 0.5px;
+    }
+    .nav-menu-icon {
+      font-size: 1.7rem;
+      cursor: pointer;
+      margin-left: 1.5rem;
+    }
+    .nav-divider {
+      border: none;
+      border-top: 2px solid #222;
+      margin: 0 0 0 0;
+    }
+    .hero-section {
+      background: #bdbdbd;
+      padding: 0 0 2rem 0;
+      margin: 0;
+    }
+    .hero-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 2.5rem 2rem 1.5rem 2rem;
+    }
+    .hero-left {
+      flex: 1;
+    }
+    .hero-title {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 3.5rem;
+      font-weight: 400;
+      margin: 0;
+      letter-spacing: 1px;
+      line-height: 1.1;
+    }
+    .hero-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: 2.5rem;
+      margin-top: 0.5rem;
+    }
+    .hero-subtext {
+      font-size: 1rem;
+      font-family: 'Roboto', sans-serif;
+      color: #222;
+      margin-bottom: 2.5rem;
+      margin-right: 0.5rem;
+    }
+    .hero-btn {
+      border: 1.5px solid #222;
+      background: transparent;
+      color: #222;
+      font-size: 1rem;
+      font-family: 'Roboto', sans-serif;
+      padding: 0.6rem 2.2rem;
+      border-radius: 0;
+      text-decoration: none;
+      font-weight: 400;
+      transition: background 0.2s, color 0.2s;
+      margin-right: 0.5rem;
+      letter-spacing: 0.5px;
+    }
+    .hero-btn:hover {
+      background: #222;
+      color: #fff;
+    }
+    .hero-image-row {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+      width: 100vw;
+      margin: 0;
+      padding: 0 0 0 0;
+      justify-content: center;
+      align-items: stretch;
+    }
+    .hero-img {
+      width: 50vw;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 1rem;
+      margin: 0;
+      display: block;
+    }
+    @media (max-width: 1100px) {
+      .hero-content {
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .hero-image-row {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .hero-img {
+        width: 100vw;
+        height: 250px;
+      }
+    }
   </style>
 </head>
 <body>
-  <nav>
-    <div class="nav-container">
-      <div class="nav-logo">Max Mercury PMC</div>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#track-record">Track Record</a>
-        <a href="#mission-vision">Mission & Vision</a>
+  <nav class="minimal-nav">
+    <div class="nav-row">
+      <div class="nav-logo-block">
+        <span class="nav-logo-icon">&#9632;</span>
+        <span class="nav-logo-text">Max Mercury<br>International PMC</span>
+      </div>
+      <div class="nav-links-minimal">
         <a href="#contact">Contact</a>
+        <span class="nav-menu-icon">&#9776;</span>
       </div>
     </div>
+    <hr class="nav-divider" />
   </nav>
-  <div class="hero-images">
-    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Luxury residential swimming pool" />
-  </div>
-  <header>
-    <h1>Max Mercury International PMC</h1>
-    <p>Precision. Integrity. Results — Your Partner in Project Excellence.</p>
-  </header>
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-left">
+        <h1 class="hero-title">EXPERT<br>GUIDANCE</h1>
+      </div>
+      <div class="hero-right">
+        <div class="hero-subtext">Dedicated to project success worldwide.</div>
+        <a class="hero-btn" href="#about">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-image-row">
+      <img src="hero1.jpg" alt="Modern building at sunset" class="hero-img" />
+      <img src="hero2.jpg" alt="Upward view of skyscraper" class="hero-img" />
+    </div>
+  </section>
   <div class="section about-section" id="about">
     <div class="about-grid">
       <div class="about-text">
@@ -463,7 +632,27 @@
         With decades of proven experience, we approach every project with innovation, excellence, and the determination to exceed expectations.</p>
       </div>
       <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=700&q=80" alt="Detailed blueprints" />
+        <img src="about-blueprint.jpg" alt="Detailed blueprints and drawing tools" />
+      </div>
+    </div>
+  </div>
+  <div class="section mission-vision-section" id="mission-vision">
+    <h2 class="mission-vision-title">Mission & Vision</h2>
+    <div class="mission-vision-grid">
+      <div class="mission-vision-item">
+        <div class="mission-vision-subtitle">Our Mission</div>
+        <img src="mission.jpg" alt="Consultant on construction site with plans" />
+        <div class="mission-vision-desc">We deliver smart consultancy solutions that shape purposeful infrastructure from recreation areas to public sector projects.</div>
+      </div>
+      <div class="mission-vision-item">
+        <div class="mission-vision-subtitle">Our Goal</div>
+        <img src="goal.jpg" alt="Aerial view of sports complex and city" />
+        <div class="mission-vision-desc">To be the most trusted project management consultancy in the GCC and beyond, known for innovation and results.</div>
+      </div>
+      <div class="mission-vision-item">
+        <div class="mission-vision-subtitle">Why Choose us</div>
+        <img src="why.jpg" alt="Team of consultants reviewing blueprints" />
+        <div class="mission-vision-desc">Led by Charles Almeida and backed by 30+ years of experience, we bring bold visions to life with precision and care.</div>
       </div>
     </div>
   </div>
@@ -473,46 +662,26 @@
       <div class="track-record-item">
         <div class="track-record-num">01</div>
         <div class="track-record-title">Precision Delivered</div>
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Luxury residential swimming pool" />
+        <img src="precision.jpg" alt="Luxury residential swimming pool under construction" />
         <div class="track-record-desc">Our expertly executed swimming pool installations reflect our commitment to precision, safety, and aesthetic excellence.</div>
       </div>
       <div class="track-record-item">
         <div class="track-record-num">02</div>
         <div class="track-record-title">Transformative Outcomes</div>
-        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80" alt="Modern public park" />
+        <img src="transformative.jpg" alt="Modern public park with play area and palm trees" />
         <div class="track-record-desc">We've transformed community spaces and government facilities with custom outdoor gym and kids play area solutions that promote wellness and engagement.</div>
       </div>
       <div class="track-record-item">
         <div class="track-record-num">03</div>
         <div class="track-record-title">Innovative Solutions</div>
-        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="3D architectural model of hotel landscape" />
+        <img src="innovative.jpg" alt="3D architectural model of hotel courtyard landscape" />
         <div class="track-record-desc">Our innovative landscape designs and outdoor fitness spaces have redefined user experience in both hospitality and residential environments.</div>
       </div>
       <div class="track-record-item">
         <div class="track-record-num">04</div>
         <div class="track-record-title">Proven Success</div>
-        <img src="https://images.unsplash.com/photo-1517960413843-0aee8e2d471c?auto=format&fit=crop&w=400&q=80" alt="Modern indoor gym" />
+        <img src="success.jpg" alt="Modern indoor gym with climbing wall and equipment" />
         <div class="track-record-desc">From indoor gym equipment to modern play zones, our work in educational institutions has delivered lasting value through smart, scalable project management.</div>
-      </div>
-    </div>
-  </div>
-  <div class="section mission-vision-section" id="mission-vision">
-    <h2 class="mission-vision-title">Mission & Vision</h2>
-    <div class="mission-vision-grid">
-      <div class="mission-vision-item">
-        <div class="mission-vision-subtitle">Our Mission</div>
-        <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=500&q=80" alt="Consultants discussing project" />
-        <div class="mission-vision-desc">We deliver smart consultancy solutions that shape purposeful infrastructure from recreation areas to public sector projects.</div>
-      </div>
-      <div class="mission-vision-item">
-        <div class="mission-vision-subtitle">Our Goal</div>
-        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=500&q=80" alt="Business cityscape" />
-        <div class="mission-vision-desc">To be the most trusted project management consultancy in the GCC and beyond, known for innovation and results.</div>
-      </div>
-      <div class="mission-vision-item">
-        <div class="mission-vision-subtitle">Why Choose us</div>
-        <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b43?auto=format&fit=crop&w=500&q=80" alt="Professional team meeting" />
-        <div class="mission-vision-desc">Led by Charles Almeida and backed by 30+ years of experience, we bring bold visions to life with precision and care.</div>
       </div>
     </div>
   </div>
