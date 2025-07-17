@@ -447,7 +447,7 @@
     </div>
   </nav>
   <div class="hero-images">
-    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80" alt="Consultancy firm office" />
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Luxury residential swimming pool" />
   </div>
   <header>
     <h1>Max Mercury International PMC</h1>
@@ -463,7 +463,7 @@
         With decades of proven experience, we approach every project with innovation, excellence, and the determination to exceed expectations.</p>
       </div>
       <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=700&q=80" alt="Consultancy firm meeting" />
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=700&q=80" alt="Detailed blueprints" />
       </div>
     </div>
   </div>
@@ -473,25 +473,25 @@
       <div class="track-record-item">
         <div class="track-record-num">01</div>
         <div class="track-record-title">Precision Delivered</div>
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Luxury residential swimming pool under construction with precision tools, clean tile layout, and modern design. Surrounded by safety barriers. Professional construction workers on site." />
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Luxury residential swimming pool" />
         <div class="track-record-desc">Our expertly executed swimming pool installations reflect our commitment to precision, safety, and aesthetic excellence.</div>
       </div>
       <div class="track-record-item">
         <div class="track-record-num">02</div>
         <div class="track-record-title">Transformative Outcomes</div>
-        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80" alt="Modern public park in the Middle East with children’s play area, outdoor gym equipment, and clean walking paths. People actively using the facilities. Desert plants and palm trees in background." />
+        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80" alt="Modern public park" />
         <div class="track-record-desc">We've transformed community spaces and government facilities with custom outdoor gym and kids play area solutions that promote wellness and engagement.</div>
       </div>
       <div class="track-record-item">
         <div class="track-record-num">03</div>
         <div class="track-record-title">Innovative Solutions</div>
-        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="3D architectural model of a landscaped hotel courtyard with elegant green space, walkways, and decorative lighting. Trees, water features, and guest seating areas. Studio lighting." />
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="3D architectural model of hotel landscape" />
         <div class="track-record-desc">Our innovative landscape designs and outdoor fitness spaces have redefined user experience in both hospitality and residential environments.</div>
       </div>
       <div class="track-record-item">
         <div class="track-record-num">04</div>
         <div class="track-record-title">Proven Success</div>
-        <img src="https://images.unsplash.com/photo-1517960413843-0aee8e2d471c?auto=format&fit=crop&w=400&q=80" alt="Modern indoor gym in a school or university setting. Well-lit space with fitness equipment, kids' climbing wall, and open exercise zones. Organized and clean design." />
+        <img src="https://images.unsplash.com/photo-1517960413843-0aee8e2d471c?auto=format&fit=crop&w=400&q=80" alt="Modern indoor gym" />
         <div class="track-record-desc">From indoor gym equipment to modern play zones, our work in educational institutions has delivered lasting value through smart, scalable project management.</div>
       </div>
     </div>
