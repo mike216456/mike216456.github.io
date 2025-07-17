@@ -204,23 +204,78 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 1.5rem;
+      gap: 0;
       background: var(--white);
       padding: 1.5rem 0 0.5rem 0;
       max-width: 1200px;
       margin: 0 auto;
     }
     .hero-images img {
-      width: 48%;
-      max-width: 700px;
-      aspect-ratio: 16/9;
+      width: 100%;
+      max-width: 1200px;
+      aspect-ratio: 16/6;
       object-fit: cover;
       border-radius: 10px;
       box-shadow: 0 2px 12px rgba(26, 39, 70, 0.10);
-      transition: transform 0.2s;
     }
-    .hero-images img:hover {
-      transform: scale(1.02);
+    .track-record-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      background: transparent;
+    }
+    .track-record-item {
+      background: #e5e5e5;
+      border-radius: 8px;
+      padding: 1.2rem 1rem 2rem 1rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(26, 39, 70, 0.04);
+    }
+    .track-record-num {
+      font-size: 1.1rem;
+      color: #222;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
+    }
+    .track-record-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #222;
+      letter-spacing: 0.5px;
+    }
+    .track-record-item img {
+      width: 100%;
+      max-width: 180px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 8px rgba(26, 39, 70, 0.08);
+    }
+    .track-record-desc {
+      font-size: 0.98rem;
+      color: #222;
+      margin-top: 0.5rem;
+    }
+    @media (max-width: 1100px) {
+      .track-record-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+    }
+    @media (max-width: 700px) {
+      .track-record-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .track-record-item img {
+        max-width: 100%;
+      }
     }
     @media (max-width: 900px) {
       .hero-images {
@@ -249,6 +304,125 @@
         font-size: 2rem;
       }
     }
+    .mission-vision-section {
+      background: #bdbdbd;
+      padding: 3.5rem 2rem 3rem 2rem;
+      max-width: 100vw;
+      margin: 0 auto 3rem auto;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .mission-vision-title {
+      font-size: 3.2rem;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 400;
+      margin-bottom: 2.5rem;
+      text-align: left;
+      color: #222;
+    }
+    .mission-vision-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      justify-items: center;
+      align-items: flex-start;
+      background: transparent;
+    }
+    .mission-vision-item {
+      background: none;
+      border-radius: 0;
+      padding: 0;
+      text-align: center;
+      box-shadow: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .mission-vision-subtitle {
+      font-size: 1.3rem;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 400;
+      margin-bottom: 1.2rem;
+      color: #222;
+    }
+    .mission-vision-item img {
+      width: 340px;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 0;
+      margin-bottom: 1.5rem;
+      box-shadow: none;
+    }
+    .mission-vision-desc {
+      font-size: 1.25rem;
+      color: #222;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 400;
+      margin-top: 0.5rem;
+      line-height: 1.4;
+    }
+    @media (max-width: 1100px) {
+      .mission-vision-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .mission-vision-item img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .about-section {
+      background: #bdbdbd;
+      padding: 3.5rem 2rem 3rem 2rem;
+      max-width: 100vw;
+      margin: 0 auto 3rem auto;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      background: transparent;
+    }
+    .about-title {
+      font-size: 4rem;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 400;
+      margin-bottom: 2.5rem;
+      text-align: left;
+      color: #222;
+    }
+    .about-paragraph {
+      font-size: 1.25rem;
+      color: #222;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      line-height: 1.4;
+      text-align: left;
+    }
+    .about-image img {
+      width: 100%;
+      max-width: 600px;
+      aspect-ratio: 1.5/1;
+      object-fit: cover;
+      border-radius: 0;
+      box-shadow: none;
+      display: block;
+      margin: 0 auto;
+    }
+    @media (max-width: 1100px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .about-image img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
   </style>
 </head>
 <body>
@@ -265,45 +439,74 @@
     </div>
   </nav>
   <div class="hero-images">
-    <img src="hero1.jpg" alt="Modern building at sunset" />
-    <img src="hero2.jpg" alt="Upward view of skyscraper" />
+    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80" alt="Consultancy firm office" />
   </div>
   <header>
     <h1>Max Mercury International PMC</h1>
     <p>Precision. Integrity. Results — Your Partner in Project Excellence.</p>
   </header>
-  <div class="section" id="about">
-    <h2>About Us</h2>
-    <p>Max Mercury International PMC is a UAE-based project management and consultancy firm with international reach — operating throughout the GCC, Europe, Asia, and Africa. Led by Charles Almeida, a highly regarded industry expert with over 25 years of hands-on experience, we specialize in transforming visions into realities.</p>
-    <p>Our team brings over 30 years of collective field experience and goes above and beyond to exceed client expectations. Whether it's civil infrastructure, recreational design, or urban development — we manage every detail with professionalism and precision.</p>
-    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Project planning image">
+  <div class="section about-section" id="about">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="about-title">About us</h2>
+        <p class="about-paragraph">At Max Mercury International PMC, our vision is to shape the future of infrastructure by delivering end-to-end project solutions that elevate communities and industries alike.<br>
+        We strive to be the partner of choice across the GCC, Europe, Asia, and Africa — known for our integrity, precision, and commitment to turning client ideas into impactful realities.</p>
+        <p class="about-paragraph">From concept to completion, we specialize in crafting environments that inspire — including swimming pools, sports tracks, gyms, play areas, and more.<br>
+        With decades of proven experience, we approach every project with innovation, excellence, and the determination to exceed expectations.</p>
+      </div>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=700&q=80" alt="Architectural drawing tools" />
+      </div>
+    </div>
   </div>
-  <div class="section" id="services">
-    <h2>Our Services</h2>
-    <p>We deliver expert consultancy and turnkey project management services across a wide range of sectors:</p>
-    <ul>
-      <li>Custom Swimming Pool Design & Build</li>
-      <li>Professional Sports Track Planning</li>
-      <li>Full-Scale Landscaping Projects</li>
-      <li>Indoor Gym Layouts & Equipment Supply</li>
-      <li>Safe & Durable Kids’ Play Areas</li>
-      <li>Outdoor Fitness & Wellness Installations</li>
-    </ul>
-    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=900&q=80" alt="Modern architecture project">
+  <div class="section" id="track-record">
+    <h2 style="text-align:center; font-size:2.2rem; font-weight:400; margin-bottom:2.5rem;">Our Proven Track Record</h2>
+    <div class="track-record-grid">
+      <div class="track-record-item">
+        <div class="track-record-num">01</div>
+        <div class="track-record-title">Precision Delivered</div>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Swimming pool installation" />
+        <div class="track-record-desc">Our expertly executed swimming pool installations reflect our commitment to precision, safety, and aesthetic excellence.</div>
+      </div>
+      <div class="track-record-item">
+        <div class="track-record-num">02</div>
+        <div class="track-record-title">Transformative Outcomes</div>
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Community space transformation" />
+        <div class="track-record-desc">We've transformed community spaces and government facilities with custom outdoor gym and kids play area solutions that promote wellness and engagement.</div>
+      </div>
+      <div class="track-record-item">
+        <div class="track-record-num">03</div>
+        <div class="track-record-title">Innovative Solutions</div>
+        <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=400&q=80" alt="Landscape design" />
+        <div class="track-record-desc">Our innovative landscape designs and outdoor fitness spaces have redefined user experience in both hospitality and residential environments.</div>
+      </div>
+      <div class="track-record-item">
+        <div class="track-record-num">04</div>
+        <div class="track-record-title">Proven Success</div>
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Indoor gym equipment" />
+        <div class="track-record-desc">From indoor gym equipment to modern play zones, our work in educational institutions has delivered lasting value through smart, scalable project management.</div>
+      </div>
+    </div>
   </div>
-  <div class="section" id="why">
-    <h2>Why Choose Us</h2>
-    <p>With a passion for delivering excellence, Max Mercury International PMC stands out as the go-to partner for public and private sector projects. We prioritize clear communication, innovative design, sustainable practices, and cost-effective execution.</p>
-    <p>Our consultants understand the local and international landscape, making us uniquely positioned to guide complex projects from concept to completion.</p>
-    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=900&q=80" alt="Teamwork and consulting">
-    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=900&q=80" alt="Business meeting">
-  </div>
-  <div class="section" id="mission">
-    <h2>Our Mission</h2>
-    <p>To deliver exceptional consulting and project management services rooted in integrity, innovation, and client satisfaction. We aim to set the standard for excellence in every environment we build and every relationship we maintain.</p>
-    <div class="divider"></div>
-    <h2>Vision Statement</h2>
-    <p>To be a globally respected leader in project consulting and management — shaping spaces that enhance communities and inspire progress.</p>
+  <div class="section mission-vision-section" id="mission-vision">
+    <h2 class="mission-vision-title">Mission & Vision</h2>
+    <div class="mission-vision-grid">
+      <div class="mission-vision-item">
+        <div class="mission-vision-subtitle">Our Mission</div>
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=500&q=80" alt="Consultant on site" />
+        <div class="mission-vision-desc">We deliver smart consultancy solutions that shape purposeful infrastructure from recreation areas to public sector projects.</div>
+      </div>
+      <div class="mission-vision-item">
+        <div class="mission-vision-subtitle">Our Goal</div>
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=500&q=80" alt="Aerial view of sports complex" />
+        <div class="mission-vision-desc">To be the most trusted project management consultancy in the GCC and beyond, known for innovation and results.</div>
+      </div>
+      <div class="mission-vision-item">
+        <div class="mission-vision-subtitle">Why Choose us</div>
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=500&q=80" alt="Team reviewing plans" />
+        <div class="mission-vision-desc">Led by Charles Almeida and backed by 30+ years of experience, we bring bold visions to life with precision and care.</div>
+      </div>
+    </div>
   </div>
   <div class="section contact" id="contact">
     <h2>Contact Us</h2>
