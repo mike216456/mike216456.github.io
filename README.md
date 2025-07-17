@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -201,6 +200,38 @@
       letter-spacing: 0.5px;
       margin-top: 2rem;
     }
+    .hero-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      background: var(--white);
+      padding: 1.5rem 0 0.5rem 0;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .hero-images img {
+      width: 48%;
+      max-width: 700px;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(26, 39, 70, 0.10);
+      transition: transform 0.2s;
+    }
+    .hero-images img:hover {
+      transform: scale(1.02);
+    }
+    @media (max-width: 900px) {
+      .hero-images {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0 0.5rem 0;
+      }
+      .hero-images img {
+        width: 100%;
+      }
+    }
     @media (max-width: 700px) {
       .section, .contact {
         padding: 2rem 1rem;
@@ -233,6 +264,10 @@
       </div>
     </div>
   </nav>
+  <div class="hero-images">
+    <img src="hero1.jpg" alt="Modern building at sunset" />
+    <img src="hero2.jpg" alt="Upward view of skyscraper" />
+  </div>
   <header>
     <h1>Max Mercury International PMC</h1>
     <p>Precision. Integrity. Results — Your Partner in Project Excellence.</p>
@@ -254,13 +289,14 @@
       <li>Safe & Durable Kids’ Play Areas</li>
       <li>Outdoor Fitness & Wellness Installations</li>
     </ul>
-    <img src="https://images.unsplash.com/photo-1581092914980-bd2eeda59d20" alt="Landscaping project">
+    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=900&q=80" alt="Modern architecture project">
   </div>
   <div class="section" id="why">
     <h2>Why Choose Us</h2>
     <p>With a passion for delivering excellence, Max Mercury International PMC stands out as the go-to partner for public and private sector projects. We prioritize clear communication, innovative design, sustainable practices, and cost-effective execution.</p>
     <p>Our consultants understand the local and international landscape, making us uniquely positioned to guide complex projects from concept to completion.</p>
-    <img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5d0c2" alt="Construction management">
+    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=900&q=80" alt="Teamwork and consulting">
+    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=900&q=80" alt="Business meeting">
   </div>
   <div class="section" id="mission">
     <h2>Our Mission</h2>
